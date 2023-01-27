@@ -1,4 +1,15 @@
 // add whatever parameters you deem necessary - good luck!
-function values(){
 
+//in - object
+//out - array of the VALUES
+//edge - invalid inputs/none
+
+function values(obj) {
+  const result = [];
+
+  for (const key in obj) {
+    result.push(obj[key]);
+  }
+
+  return result;
 }
